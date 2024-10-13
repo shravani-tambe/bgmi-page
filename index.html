@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://unpkg.co/gsap/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  </head>
+  <body>
+    <div class="menu-container">
+      <nav>
+        <div class="logo">Bits&Bytes</div>
+        <div class="menu-open-btn">Menu</div>
+      </nav>
+
+      <div class="menu-overlay">
+        <div class="menu-nav">
+          <div class="menu-logo">Bits&Bytes</div>
+          <div class="menu-close-btn">Close</div>
+        </div>
+        <div class="menu-cols">
+          <div class="col">
+            <div class="video">
+              <div class="video-preview"></div>
+              <div class="video-details">
+                <p>
+                  <i class="ph-fill ph-play-circle" id="play"></i>Play video
+                </p>
+                <p>-01:18</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-link">
+              <a href="#">Home</a>
+            </div>
+            <div class="menu-link">
+              <a href="#carousel">About</a>
+            </div>
+            <div class="menu-link">
+              <a href="#rulebook">Rulebook</a>
+            </div>
+            <div class="menu-link">
+              <a href="#">Leaderboard</a>
+            </div>
+            <div class="btn">
+              <a href="#">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <div class="menu-divider"></div>
+          <div class="menu-footer-copy">
+            <div class="slogan">
+              <p>Conquer the Battlegrounds, Dominate the victory!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+      <div class="left img"></div>
+      <div class="right img"></div>
+    </div>
+    <div class="hero-image">
+      <div class="wrapper-img">
+        <div class="box"></div>
+        <div>
+          <img class="image" src="images/img1.png" />
+        </div>
+      </div>
+    </div>
+    <div><p class="title">BGMI</p></div>
+
+    <div class="about">
+      <div class="carousel" id="carousel">
+        <div class="bg-box">
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+          <div class="bg"></div>
+        </div>
+        <div class="img-box">
+          <div class="img-list">
+            <div class="img-slider">
+              <div class="img-item fruit active" style="--i: 0">
+                <img src="images/bg1.png" />
+              </div>
+              <div class="img-item fruit" style="--i: 1">
+                <img src="images/bg2.png" />
+              </div>
+              <div class="img-item fruit" style="--i: 2">
+                <img src="images/bg3.png" />
+              </div>
+              <div class="img-item fruit" style="--i: 3">
+                <img src="images/bg4.png" />
+              </div>
+              <div class="img-item" style="--i: 0">
+                <img src="images/char1.png" />
+              </div>
+              <div class="img-item" style="--i: 1">
+                <img src="images/char2.png" />
+              </div>
+              <div class="img-item" style="--i: 2">
+                <img src="images/char3.png" />
+              </div>
+              <div class="img-item" style="--i: 3">
+                <img src="images/char4.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <strong>
+      <div class="info-box">
+        <div class="info-slider">
+          <div class="info-item">
+            <h2>Erangel</h2>
+            <p>
+              Erangel is the base map for the game. An 8x8 km map dotted with
+              small outcroppings of buildings.
+            </p>
+          </div>
+          <div class="info-item">
+            <h2>Miramar</h2>
+            <p>
+              Miramar is a desert map for the game with an 8x8 km map having a
+              sheer landscape and barren land.
+            </p>
+          </div>
+          <div class="info-item">
+            <h2>Sanhok</h2>
+            <p>
+              Sanhok is a 4x4km island compared to other maps that are 8x8km. In
+              this small map, enemies will always be lurking nearby.
+            </p>
+          </div>
+          <div class="info-item">
+            <h2>Vikendi</h2>
+            <p>
+              Vikendi is 6x6km map set on Adratic Sea as a fictional snow
+              island. Watch out for the player footprints!!
+            </p>
+          </div>
+        </div>
+      </div>
+    </strong>
+
+    <div class="navigation">
+      <span class="prev-btn">
+        <i class="bx bx-chevron-left"></i>
+      </span>
+      <span class="next-btn">
+        <i class="bx bx-chevron-right"></i>
+      </span>
+    </div>
+
+    <section>
+      <div class="card-wrapper">
+        <p class="card-heading">Event Information</p>
+        <div class="card-body">
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="images/card2.jpg" class="card-img" alt="Event Image" />
+              <div class="card-content">
+                <h3>Event Overview</h3>
+                <p>Event Dates: 26th and 27th September, 2023</p>
+                <p>Location: Online</p>
+                <p>Timings: Evening</p>
+                <p>Registrations are now open for all participants!</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="images/card1.jpg" class="card-img" alt="Prize Pool" />
+              <div class="card-content">
+                <h3>Prize Pool Details</h3>
+                <p>Total Prize Pool Worth: ₹8000</p>
+                <p>First Prize: ₹5000 for the winning squad</p>
+                <p>Second Prize: ₹3000 for the runner-up squad</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+              <img
+                src="images/card3.jpg"
+                class="card-img"
+                alt="Registration Fees"
+              />
+              <div class="card-content">
+                <h3>Registration Fees</h3>
+                <p>Solo Entry Fee: ₹100 per player</p>
+                <p>Squad Registration Fee: ₹300 per team</p>
+                <p>A squad consists of a maximum of four team members.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <h1 class="rules-header">Battlefield Arena Rules</h1>
+        <div class="services-grid">
+          <div class="service-box">
+            <div class="icon">1</div>
+            <h3 class="rules-title">Team Members</h3>
+            <p class="rules-body">
+              Each team should have 4 members at all times during the
+              competition.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">2</div>
+            <h3 class="rules-title">Designated Captain</h3>
+            <p class="rules-body">
+              Each team must have a designated captain who will be their point
+              of contact with tournament officials.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">3</div>
+            <h3 class="rules-title">Character Clothing</h3>
+            <p class="rules-body">
+              The in-game characters of all players must remain fully clothed
+              after they leave the lobby.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">4</div>
+            <h3 class="rules-title">Mobile Phones Only</h3>
+            <p class="rules-body">
+              Players are allowed to participate using only handheld mobile
+              phones.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">5</div>
+            <h3 class="rules-title">No Emulators</h3>
+            <p class="rules-body">
+              No player should use an Emulator like BlueStacks to play on a PC
+              or any other device that is not an Android smartphone.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">6</div>
+            <h3 class="rules-title">Player Changes</h3>
+            <p class="rules-body">
+              Teams cannot change their players during the competition.
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">7</div>
+            <h3 class="rules-title">Cheating Penalties</h3>
+            <p class="rules-body">
+              If caught or suspected cheating, the team will be eliminated
+              unless they provide hard evidence (video recording).
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">8</div>
+            <h3 class="rules-title">Point System</h3>
+            <p class="rules-body">
+              Winners will be decided according to the point table. Total points
+              = rank points + kill points (1 kill = 1 point).
+            </p>
+          </div>
+          <div class="service-box">
+            <div class="icon">9</div>
+            <h3 class="rules-title">POV Videos</h3>
+            <p class="rules-body">
+              From each team, there should be at least 2 POV videos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-section point-table">
+        <p class="table-heading">Point Table</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Rank 1</td>
+              <td>10</td>
+              <td>Rank 8</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Rank 2</td>
+              <td>6</td>
+              <td>Rank 9</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rank 3</td>
+              <td>5</td>
+              <td>Rank 10</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rank 4</td>
+              <td>4</td>
+              <td>Rank 11</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rank 5</td>
+              <td>3</td>
+              <td>Rank 12</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rank 6</td>
+              <td>2</td>
+              <td>Rank 13</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Rank 7</td>
+              <td>1</td>
+              <td>Rank 14</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td colspan="3">Kill point</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="col1">
+            <a href="#" class="brand" target="_black"></a>
+            <ul class="media-icons">
+              <li>
+                <a
+                  href="https://www.instagram.com/aissms_coe/?hl=en"
+                  target="_black"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://in.linkedin.com/school/aissms-coe/"
+                  target="_black"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@aissmscollegeofengineering2566"
+                  target="_black"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col2">
+            <ul class="footer-menu">
+              <li><a href="#" target="_black">Home</a></li>
+              <li><a href="#" target="_black">VR</a></li>
+              <li><a href="#" target="_black">BGMI</a></li>
+              <li><a href="#" target="_black">TREASURE HUNT</a></li>
+              <li>
+                <a href="https://aissmscoe.com/" target="_black">AISSMS COE</a>
+              </li>
+              <p>
+                <br />
+                Address: No. 1, Kennedy Road, Near RTO Office Sangamvadi,
+                Shivajinagar, Pune, Maharashtra 411001
+              </p>
+            </ul>
+          </div>
+          <div class="col3">
+            <p>Registrations now open!</p>
+            <form>
+              <div class="input-wrap">
+                <a
+                  class="fa-solid fa-paper-plane"
+                  href="https://aissmscoe.akronsystems.com/CoeWorkShop.aspx"
+                  id="clg-form"
+                  target="_black"
+                ></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="mekk">
+            <p>@Bits&Bytes 2024 - All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
